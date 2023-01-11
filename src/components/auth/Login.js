@@ -84,6 +84,7 @@ const Login = () => {
                     placeholder='Enter Your Email'
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
+                    defaultValue = '' // ? set defaultValue to ""
                 />
             </FormControl>
             <FormControl id='password' isRequired>
@@ -95,6 +96,7 @@ const Login = () => {
                         placeholder='Enter Your Password'
                         onChange={(e) => setPassword(e.target.value)}
                         value={password}
+                        defaultValue = '' // ? set defaultValue to ""
                     />
                 <InputRightElement width='4.5rem'>
                     {/* password visibility functionality */}
