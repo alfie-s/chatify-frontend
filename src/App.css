@@ -1,0 +1,39 @@
+/* import chosen google fonts */
+/*find a proper colour pallete*/
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Poppins:wght@300&display=swap');
+/* font-family: 'Oleo Script', cursive;
+font-family: 'Poppins', sans-serif; */
+.App {
+  min-height: 100vh;
+  display: flex;
+  background-color: rgb(228, 228, 228); 
+}
+
+.myChatStack::-webkit-scrollbar {
+  width: 0px;
+}
+
+.myChatStack::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+.myChatStack::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.appTitleHome {
+  font-family: 'Oleo Script', cursive;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
