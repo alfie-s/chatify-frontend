@@ -42,7 +42,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
       // get request to get the chat id of selected chat
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `https://chatify-api-9dch.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       // setstates
@@ -53,7 +53,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     } catch (error) {
       toast({
         title: "Error Occured!",
-        description: "Failed to Load the Messages",
+        description: "Failed to Load Messages",
         status: "error",
         duration: 5000,
         isClosable: true,
@@ -74,7 +74,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/api/message",
+          "https://chatify-api-9dch.onrender.com/api/message",
           {
             content: newMessage,
             chatId: selectedChat,
