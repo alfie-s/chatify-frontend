@@ -65,7 +65,7 @@ const GroupChatModal = () => {
         },
       };
       // api call get request query
-      const { data } = await axios.get(`/api/user?search=${search}`, config);
+      const { data } = await axios.get(`https://chatify-api-9dch.onrender.com/api/user?search=${search}`, config);
       // test console log
       console.log(data);
       // set state
@@ -112,7 +112,7 @@ const GroupChatModal = () => {
       };
       // api post request
       const { data } = await axios.post(
-        `/api/chat/group`,
+        `https://chatify-api-9dch.onrender.com/api/chat/group`,
         {
           name: groupChatName,
           // stringify of selected users array

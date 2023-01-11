@@ -127,7 +127,7 @@ const Signup = () => {
             };
             // api request
             const { data } = await axios.post(
-              "/api/user",
+              "https://chatify-api-9dch.onrender.com/api/user",
               {
                 name,
                 email,

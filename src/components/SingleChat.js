@@ -9,7 +9,7 @@ import io from "socket.io-client";
 import UpdateGroupChatModal from "./UpdateGroupChatModal";
 import { ChatState } from "../context/ChatProvider";
 //deployment endpont
-const ENDPOINT = "http://localhost:5000"; // "final deployed URL"; -> After deployment
+const ENDPOINT = "https://chatify-api-9dch.onrender.com"; // "https://chatify-api-9dch.onrender.com"; -> After deployment
 let socket, selectedChatCompare;
 // this renders the one on one chats in the window
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {

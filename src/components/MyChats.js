@@ -28,7 +28,7 @@ const MyChats = ({ fetchAgain }) => {
         },
       };
       // api call to fetch all chats for the user
-      const { data } = await axios.get("/api/chat", config);
+      const { data } = await axios.get("https://chatify-api-9dch.onrender.com/api/chat", config);
       // set state
       setChats(data);
       // pop up warning

@@ -64,7 +64,7 @@ function SideDrawer() {
         },
       };
       // set data as search result using config as auth
-      const { data } = await axios.get(`/api/user?search=${search}`, config);
+      const { data } = await axios.get(`https://chatify-api-9dch.onrender.com/api/user?search=${search}`, config);
       // change loading state
       setLoading(false);
       // set to data
@@ -96,7 +96,7 @@ function SideDrawer() {
         },
       };
       // set data using config as auth
-      const { data } = await axios.post(`/api/chat`, { userId }, config);
+      const { data } = await axios.post(`https://chatify-api-9dch.onrender.com/api/chat`, { userId }, config);
       // if it finds the chat in the list update it
       if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
       // set to data

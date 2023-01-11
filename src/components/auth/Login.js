@@ -44,7 +44,7 @@ const Login = () => {
           };
         //make request to /login
           const { data } = await axios.post(
-            "/api/user/login",
+            "https://chatify-api-9dch.onrender.com/api/user/login",
             { email, password },
             config
           );
